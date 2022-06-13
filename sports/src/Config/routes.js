@@ -2,12 +2,21 @@ import React from "react";
 import Login from "../Pages/Login/";
 // import Dashboard from '../Pages/Dashboard';
 import PageNotFound from "../Pages/NotFound";
+import Home from "../Pages/Home";
+import Sports from "../Pages/Sports/sports"
 
 const routes = [
 {
     path: "/",
-    element: <Login />,
-    isPrivate: false
+    element: <Home />,
+},
+{
+    path: "/Sports",
+    element: <Sports />
+},
+{
+    path: "/Login",
+    element: <Login />
 },
 /* {
     path: "/dashboard",
@@ -17,7 +26,6 @@ const routes = [
 {
     path: "/*",
     element: <PageNotFound />,
-    isPrivate: true
 },
 ];
 
