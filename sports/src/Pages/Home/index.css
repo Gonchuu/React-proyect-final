@@ -1,0 +1,14 @@
+.home {
+    background-image: url(https://www.imdsg.es/wp-content/uploads/fondo.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center; 
+    background-size: cover;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+}

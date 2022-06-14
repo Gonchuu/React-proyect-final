@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+.container-button {
+    border-radius: 50px;
+    background-color: rgb(151, 245, 214);
+    margin: 30px;
+}
+
+.container-img {
+    width: 30px;
+    height: 30px;
+    align-items: left;
+}

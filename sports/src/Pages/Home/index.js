@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './index.css';
 
 function index() {
   return (
-    <div>
-      <h1>la casa de los deportes</h1>
-    </div>
+    <>
+    <h1 className='title'>LA CASA DE LOS DEPORTES</h1>
+    <div className='home'></div>
+    </>
   )
 }
 
