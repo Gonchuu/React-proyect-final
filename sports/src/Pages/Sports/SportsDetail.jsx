@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import './SportsDetail.css';
 
 
 const SportsDetail = () => {
@@ -19,11 +20,11 @@ const SportsDetail = () => {
     }, [idUser]);
 
     return (
-        <div>
+        <div className='containerr'>
             {isLoading ? <p>Cargando...</p> : <>
-            <img src={sports.strSportThumb} alt="img-profile"/>
-            <p>Name: {sports.name}</p>
-            <p>strSportDescription: {sports.strSportDescription}</p>
+            <img className='containerr-img' src={sports.strSportThumb} alt="img-profile"/>
+            <p className='containerr-p'><b>Name:</b> {sports.name}</p>
+            <p className='containerr-p'><b>Description:</b>: {sports.strSportDescription}</p>
             </>}
         </div>
     )

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Sports.css';
 
 
 const Users = () => {
@@ -30,11 +31,11 @@ const Users = () => {
 
   return (
     <div>
-      <h3>Characters list</h3>
+      <h3 className='titlee'>Sports list</h3>
       {isLoading ? <p>Cargando...</p> :
-      <ul>
+      <ul className='ul-sports'>
         {sportsList?.length > 0 ? sportsList.map(({ id, name }) =>
-          <button className='button-character' key={id}>
+          <button className='button-sports' key={id}>
             <Link to={`${id}`}>{name}</Link>
           </button>
         ) : <p>El listado está vacío</p>}

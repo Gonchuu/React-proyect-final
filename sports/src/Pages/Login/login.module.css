@@ -4,10 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://i.pinimg.com/originals/63/e9/07/63e907bb76ecf92cc4f71500a46615ad.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
 }
 
 .formContainer {
-    width: 200px;
+    width: 300px;
 }
 
 .error {

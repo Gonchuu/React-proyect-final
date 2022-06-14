@@ -1,0 +1,19 @@
+.ul-sports {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.button-sports {
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(158, 185, 235);
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+}
+
+.titlee {
+    font-size: 50px;
+}

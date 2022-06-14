@@ -30,7 +30,7 @@ function Login(props) {
         <form>
           <div className={styles.loginForm}>
             <div className={styles.loginFormItem}>
-              <label htmlFor="email">Username</label>
+              <label htmlFor="email"><b>Username</b></label>
               <input
                 type="text"
                 id="email"
@@ -40,7 +40,7 @@ function Login(props) {
               />
             </div>
             <div className={styles.loginFormItem}>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password"><b>Password</b></label>
               <input
                 type="password"
                 id="password"
