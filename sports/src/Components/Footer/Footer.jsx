@@ -2,9 +2,13 @@ import React from 'react'
 
 function Footer() {
   return (
-    <>
-      <div>Footer</div>
-    </>
+
+      <div className='container'>
+        <button className='container-button'>Facebook</button>
+        <button className='container-button'>GitHub</button>
+        <button className='container-button'>Instagram</button>
+      </div>
+
   )
 }
 

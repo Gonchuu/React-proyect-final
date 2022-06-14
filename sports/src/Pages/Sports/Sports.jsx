@@ -5,47 +5,59 @@ import './Sports.css';
 
 const Users = () => {
 
-  const [isLoading, setIsLoading] = useState(false);
-  const [numPage, setNumPage] = useState(1);
-  const [sportsList, setSportsList] = useState([]);
+  const [users, setUsers] = useState([]);
+  const [search, setSearch] = useState("");
+
+  //función para traer los datos de la API
+  const URL = "https://628fb307dc47852365454a59.mockapi.io/character";
+
+  const showData = async () => {
+    const response = await fetch(URL);
+    const data = await response.json();
+    //console.log(data)
+    setUsers(data);
+  };
+  //función de búsqueda
+  const searcher = (e) => {
+    setSearch(e.target.value);
+  };
+
+  //metodo de filtrado
+  const results = !search
+    ? users
+    : users.filter((dato) =>
+        dato.name.toLowerCase().includes(search.toLocaleLowerCase())
+      );
 
   useEffect(() => {
-    setIsLoading(true);
-    const getUsers = async () => {
-      const response = await fetch(`https://628fb307dc47852365454a59.mockapi.io/character`);
-      const  results    = await response.json();
-      console.log(results) 
-      setSportsList(results);
-      setIsLoading(false)
-    }
-    getUsers();
-  }, [numPage]);
-
-  const handlePrev = () => {
-    setNumPage(numPage => numPage - 1);
-  }
-
-  const handleNext = () => {
-    setNumPage(numPage => numPage + 1);
-  }
+    showData();
+  }, []);
 
   return (
+    <>
+
+ <h3>SPORTS</h3>
     <div>
-      <h3 className='titlee'>Sports list</h3>
-      {isLoading ? <p>Cargando...</p> :
-      <ul className='ul-sports'>
-        {sportsList?.length > 0 ? sportsList.map(({ id, name }) =>
-          <button className='button-sports' key={id}>
-            <Link to={`${id}`}>{name}</Link>
-          </button>
-        ) : <p>El listado está vacío</p>}
-      </ul>}
+      <input
+        value={search}
+        onChange={searcher}
+        type="text"
+        placeholder="Search"
+        className="form-control"
+      />
       <div>
-        <button onClick={handlePrev}>Prev</button>
-        <span>{numPage}</span>
-        <button onClick={handleNext}>Next</button>
+        {results.map((user) => (
+          <button className='button-sports' key={user.id}>
+          <Link to={`${user.id}`}>{user.name}</Link>
+          </button>
+        ))}
       </div>
     </div>
+  </>
+
+
+
+
   )
 }
 
