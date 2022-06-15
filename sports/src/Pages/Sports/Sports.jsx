@@ -36,7 +36,7 @@ const Users = () => {
   return (
     <>
 
- <h3>SPORTS</h3>
+ <h2 className='title-sports'>SPORTS</h2>
     <div>
       <input
         value={search}

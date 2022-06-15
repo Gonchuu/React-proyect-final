@@ -17,3 +17,27 @@
 .titlee {
     font-size: 50px;
 }
+
+.form-control {
+    margin-left: 20px;
+}
+
+.title-sports {
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+    input { 
+        font-size: 20px;
+}
+}
+@media only screen and (min-width: 768px) {
+    input { 
+        font-size: 25px;
+}
+}
+@media only screen and (min-width: 1200px) {
+    input { 
+        font-size: 30px;
+}
+}

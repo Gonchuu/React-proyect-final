@@ -14,8 +14,9 @@ function Header() {
   return (
     <Router>
     <div className='container'>
+    <img className='container-img' src='https://i.pinimg.com/474x/69/ed/be/69edbec372e8f3b818904165b3d6e216.jpg' alt='logo'/> 
     <Link to='/'>
-      <img className='container-img' src='https://i.pinimg.com/474x/69/ed/be/69edbec372e8f3b818904165b3d6e216.jpg' alt='logo'/> <button  className='container-button'>Home</button>
+      <button  className='container-button'>Home</button>
     </Link>
     <Link to='/Sports'>
         <button  className='container-button'>Sports</button>

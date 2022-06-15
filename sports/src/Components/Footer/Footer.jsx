@@ -4,9 +4,7 @@ function Footer() {
   return (
 
       <div className='container'>
-        <button className='container-button'>Facebook</button>
-        <button className='container-button'>GitHub</button>
-        <button className='container-button'>Instagram</button>
+        <p><b>© 2022 Copyright: Gonchu</b></p>
       </div>
 
   )
