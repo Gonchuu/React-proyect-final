@@ -1,17 +1,26 @@
-.ul-sports {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
 .button-sports {
-    margin: 20px;
-    height: 100px;
-    width: 100px;
+    margin: 50px;
+    height: 200px;
+    width: 200px;
     background-color: rgb(158, 185, 235);
     -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+}
+
+.pagbutton {
+    margin: 20px;
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+}
+
+.pagbutton:hover {
+    background-color: #008CBA;
+    color: white;
 }
 
 .titlee {
@@ -20,6 +29,11 @@
 
 .form-control {
     margin-left: 20px;
+}
+
+.form-control:hover {
+    border-color: #008CBA;
+    color: white;
 }
 
 .title-sports {

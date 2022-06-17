@@ -15,12 +15,20 @@ function Dashboard(props) {
   return (
     <div style={{ padding: 10 }}>
       <div className={styles.dashboardPage}>
-        <h1>Dashboard</h1>
+        <h1>Prensa española</h1>
         <button className={styles.logoutBtn} onClick={handleLogout}>
           Logout
         </button>
       </div>
       <p>Welcome {userDetails.user.email}</p>
+      <div>
+        <a href="https://www.marca.com/">Marca</a>
+        <img className={styles.periodico} src="https://e00-marca.uecdn.es/imagenes/2022/03/12/portada/marca_papel/g1203.35acebaaac283f4f521648cba01feca9.jpg" alt="marca"/>
+        <img className={styles.periodico} src="https://s1.eestatic.com/2022/04/22/actualidad/666943303_223740704_855x1140.jpg" alt="as"/>
+      </div>
+      <div>
+        <a href="https://as.com/">As</a>
+      </div>
     </div>
   );
 }

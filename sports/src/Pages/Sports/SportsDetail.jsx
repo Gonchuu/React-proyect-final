@@ -21,7 +21,7 @@ const SportsDetail = () => {
 
     return (
         <div className='containerr'>
-            {isLoading ? <p>Cargando...</p> : <>
+            {isLoading ? <p>Loading...</p> : <>
             <img className='containerr-img' src={sports.strSportThumb} alt="img-profile"/>
             <p className='containerr-p'><b>Name:</b> {sports.name}</p>
             <p className='containerr-p'><b>Description:</b>: {sports.strSportDescription}</p>

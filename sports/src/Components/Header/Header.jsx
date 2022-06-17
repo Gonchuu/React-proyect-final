@@ -9,6 +9,8 @@ import AppRoutes from '../AppRoutes'
 import SportsDetail from '../../Pages/Sports/SportsDetail';
 import './Header.css';
 
+// const Dashboard = React.lazy(() => import("./Pages/Dashboard"));
+
 
 function Header() {
   return (
@@ -31,6 +33,7 @@ function Header() {
     <Route path='/Sports' element={<Sports />} />
     <Route path='/Sports/:idUser' element={<SportsDetail />} />
     <Route path='/Login' element={<Login />} />
+    {/* <Route path='/dashboard' element={<React.Suspense fallback={<>Loading ...</>}></React.Suspense>}/> */}
     <Route element={<AppRoutes />} path="/dashboard" />
     <Route path='*' element={<NotFound />} />
     </Routes>
