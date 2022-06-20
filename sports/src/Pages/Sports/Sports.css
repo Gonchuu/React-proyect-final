@@ -14,8 +14,8 @@
     background: transparent;
     border: 2px solid #0099CC;
     border-radius: 6px;
-    width: 60px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
 }
 
 .pagbutton:hover {
@@ -29,6 +29,9 @@
 
 .form-control {
     margin-left: 20px;
+    margin-top: 40px;
+    box-sizing: content-box;
+    width: 100%; 
 }
 
 .form-control:hover {
@@ -38,6 +41,7 @@
 
 .title-sports {
     margin-left: 20px;
+    margin-top: 40px;
 }
 
 @media only screen and (min-width: 480px) {

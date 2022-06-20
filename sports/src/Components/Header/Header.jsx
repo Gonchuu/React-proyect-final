@@ -5,8 +5,9 @@ import Sports from "../../Pages/Sports/Sports";
 import Home from "../../Pages/Home/Index";
 import Login from "../../Pages/Login/index";
 import NotFound from '../../Pages/NotFound';
-import AppRoutes from '../AppRoutes'
+import AppRoutes from '../AppRoutes';
 import SportsDetail from '../../Pages/Sports/SportsDetail';
+import Periodico from '../Periodico/Periodico';
 import './Header.css';
 
 // const Dashboard = React.lazy(() => import("./Pages/Dashboard"));
@@ -26,6 +27,10 @@ function Header() {
     <Link to='/Login'>
         <button  className='container-button'>Login</button>
     </Link>
+    <Link to='/Periodico'>
+        <button  className='container-button'>Periodico</button>
+    </Link>
+    
 </div>
 <div>
 <Routes>
@@ -33,6 +38,7 @@ function Header() {
     <Route path='/Sports' element={<Sports />} />
     <Route path='/Sports/:idUser' element={<SportsDetail />} />
     <Route path='/Login' element={<Login />} />
+    <Route path='/Periodico' element={<Periodico />} />
     {/* <Route path='/dashboard' element={<React.Suspense fallback={<>Loading ...</>}></React.Suspense>}/> */}
     <Route element={<AppRoutes />} path="/dashboard" />
     <Route path='*' element={<NotFound />} />

@@ -4,7 +4,7 @@ import './index.css';
 function index() {
   return (
     <>
-    <h1 className='title'>LA CASA DE LOS DEPORTES</h1>
+    <h1 className='title'>SPORTS</h1>
     <div className='home'></div>
     </>
   )

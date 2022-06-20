@@ -1,0 +1,39 @@
+.table {
+    background-color: rgb(148, 162, 184);
+    width: 100%;
+    margin: 50px;
+}
+
+.tabla {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-periodico {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+}
+
+.button-periodico:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.periodic {
+    background-color: rgb(217, 222, 222);
+}
+
+.table-crear {
+    margin: 20px;
+}
+
+.thead {
+    margin: 20px;
+}
+
+tbody {
+    margin: 20px;
+}
