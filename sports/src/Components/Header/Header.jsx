@@ -28,7 +28,7 @@ function Header() {
         <button  className='container-button'>Login</button>
     </Link>
     <Link to='/Periodico'>
-        <button  className='container-button'>Periodico</button>
+        <button  className='container-button'>Newpaper</button>
     </Link>
     
 </div>
